@@ -3,11 +3,40 @@
 	<title>story</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		img {
-			width: 100%;
-			height: auto;
-		}
+        .responsive {
+            width: 90%;
+            height: 400px;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
 
+        .centered {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .texting {
+            color: #5a5a5a;
+            font-family: 'Raleway',sans-serif;
+            word-spacing: 10px;
+            line-height: 1.72;
+            font-size: 20px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+		
 		* {
 			box-sizing: border-box;
 		}
@@ -15,26 +44,16 @@
 		body {
 			background-color: #f1f1f1;
 			padding: 20px;
-			font-family: Arial;
+		
 		}
 
-		/* Center website */
-		.main {
-			max-width: 1000px;
-			margin: auto;
-		}
-
-		h1 {
-			font-size: 50px;
-			word-break: break-all;
-		}
-
-
-
+		
 		.column {
 			float: left;
-			width: 33.33%;
-			padding: 5px;
+			width: 30%;
+			padding:5px;
+			margin-left:35px;
+			
 		}
 
 		/* Clearfix (clear floats) */
@@ -82,7 +101,20 @@
 	</style>
 </head>
 <body>
-	<h1 style="text-align:center;font-size:400%;font-family:cursive;color:black">Best places to visit in kerala</h1>
+	<div class="container">
+		<img src="https://media.istockphoto.com/photos/houseboat-picture-id497686593?k=6&m=497686593&s=612x612&w=0&h=BPab51MUM2JljUt5ShQZLm8Xz3Dro77QfshtJSQeA_A=" class="responsive">
+		<div class="centered">KERALA</div>
+
+		<p class="texting">
+			Kerala is a gorgeous South Indian state which has long coastlines
+			and mesmerizing hill stations like Munnar and Alleppey. The country has
+			some exceptional places which can be explored with Kerala tourism.
+			A few top things to do in Kerala are staying in a houseboat, elephant
+			bathing, bird watching, shikara ride, and go for Periyar jeep ride.
+			The culture of Kerala is influenced by Davidian culture and Indian
+			culture
+		</p>
+	</div>
 	<div class="row">
 		<div class="column">
 			<div class="content">
